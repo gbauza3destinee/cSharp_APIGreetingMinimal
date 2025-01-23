@@ -13,7 +13,7 @@ class MappingEndpoints{
     // --->  Method to be nested in api call from Program.cs 
 
     [HttpPost]
-    public static IResult postName(ClientRequest ClientName){
+    public static IResult PostName(ClientRequest ClientName){
 
         // Capture value of ClientName 
 
@@ -21,10 +21,10 @@ class MappingEndpoints{
         
         // Trim leading/trailing whitespace
 
-        if (string.IsNullOrWhiteSpace(ClientName.getClientName().Trim())){
+        if (string.IsNullOrWhiteSpace(ClientName.GetClientName().Trim())){
             return Results.BadRequest("No name provided in Request.");
         } else {
-            return Results.Ok("Hello " + ClientName.getClientName() + "!");
+            return Results.Ok("Hello " + ClientName.GetClientName() + "!");
 
         }
        

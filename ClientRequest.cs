@@ -4,20 +4,22 @@ namespace HelloAPI
 {
     /// "Constructor field unbinded" -> metadata for compiler
     class ClientRequest {
-        private string clientName;
 
-        public ClientRequest(String clientName){
-            this.clientName = clientName;
+        [JsonPropertyName("ClientName")]
+        private string ClientName;
+
+        public ClientRequest(string ClientName){
+            this.ClientName = ClientName;
         }
 
         [JsonConstructor]
         public ClientRequest(){
-            this.clientName = string.Empty;
+            this.ClientName = string.Empty;
         }
     
         
-        public String getClientName(){
-            return this.clientName;
+        public String GetClientName(){
+            return this.ClientName;
         }
     }
 }

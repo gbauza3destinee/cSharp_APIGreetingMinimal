@@ -26,3 +26,4 @@
 /Users/desgonzalezbauza/Documents/C#/APIWithoutController/helloAPI/obj/Debug/net9.0/helloAPI.pdb
 /Users/desgonzalezbauza/Documents/C#/APIWithoutController/helloAPI/obj/Debug/net9.0/helloAPI.genruntimeconfig.cache
 /Users/desgonzalezbauza/Documents/C#/APIWithoutController/helloAPI/obj/Debug/net9.0/ref/helloAPI.dll
+/Users/desgonzalezbauza/Documents/C#/APIWithoutController/helloAPI/obj/Debug/net9.0/helloAPI.sourcelink.json

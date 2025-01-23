@@ -11,7 +11,7 @@ class Program {
     // app.MapGet("/", () => "Hello World!");
 
     // The Entry point of the app 
-    app.MapPost("/clientName", MappingEndpoints.postName);
+    app.MapPost("/clientName", MappingEndpoints.PostName);
     app.Run();
 
     }

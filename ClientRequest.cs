@@ -2,11 +2,12 @@ using System.Text.Json.Serialization;
 
 namespace HelloAPI
 {
-    /// "Constructor field unbinded" -> metadata for compiler
     class ClientRequest {
 
         [JsonPropertyName("ClientName")]
-        private string ClientName;
+
+        /// How to access this get method in MappingEndpoints file?
+        public string ClientName { get; set; }
 
         public ClientRequest(string ClientName){
             this.ClientName = ClientName;
@@ -18,7 +19,7 @@ namespace HelloAPI
         }
     
         
-        public String GetClientName(){
+        public string GetClientName(){
             return this.ClientName;
         }
     }

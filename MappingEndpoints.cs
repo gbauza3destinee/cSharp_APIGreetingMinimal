@@ -21,10 +21,10 @@ class MappingEndpoints{
         
         // Trim leading/trailing whitespace
 
-        if (string.IsNullOrWhiteSpace(ClientName.GetClientName().Trim())){
+        if (string.IsNullOrWhiteSpace(ClientName.ClientName.Trim())){
             return Results.BadRequest("No name provided in Request.");
         } else {
-            return Results.Ok("Hello " + ClientName.GetClientName() + "!");
+            return Results.Ok("Hello " + ClientName.ClientName + "!");
 
         }
        
